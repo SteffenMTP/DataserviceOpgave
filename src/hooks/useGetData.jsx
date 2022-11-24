@@ -15,6 +15,7 @@ const useGetData = () => {
     const getData = (url) => {
 
         setLoading(true)
+        // setData() Hvis der ønskes at fx starship siden under loading tømmes fra data
 
         axios.get(url)
             .then(res => { 

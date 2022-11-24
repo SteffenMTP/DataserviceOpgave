@@ -36,6 +36,10 @@ const Starships = () => {
 
                 {data &&
                     <>
+                        <div className="my-5">
+                        <button disabled={data.previous ? false : true} className="btn btn-success" onClick={() => { setPageNumber(PageNumber - 1) }}>&lt;&lt; Previous  </button>
+                        <button disabled={data.next ? false : true} className="btn btn-success" onClick={() => { setPageNumber(PageNumber + 1) }}>Next &gt;&gt; </button>
+                        </div>
 
                         <div className="row row-cols-1 row-cols-md-4 g-2">
 
@@ -57,9 +61,7 @@ const Starships = () => {
                                 ) 
                             }
                         </div>
-                    
-                        <button disabled={data.previous ? false : true} onClick={() => { setPageNumber(PageNumber - 1) }}>&lt;&lt; Previous  </button>
-                        <button disabled={data.next ? false : true} onClick={() => { setPageNumber(PageNumber + 1) }}>Next &gt;&gt; </button>
+                            
                     </>
                 }
 
