@@ -12,12 +12,12 @@ const useGetData = () => {
     const [error, setError] = useState(false);
     const [loading, setLoading] = useState(false);
 
-    const getData = (url) => {
+    const getData = (url, headers = null, params = null) => {
 
         setLoading(true)
         // setData() Hvis der ønskes at fx starship siden under loading tømmes fra data
 
-        axios.get(url)
+        axios.get(url, { headers: headers, params: params })
             .then(res => { 
                 console.log(res.data)
                 setData(res.data)

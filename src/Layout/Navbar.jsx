@@ -50,6 +50,7 @@ const Navbar = () => {
                     <li><Link to = "/Species">Species</Link></li>
                     <li><Link to = "/Starships">Starships</Link></li>
                     <li><Link to = "/News">News</Link></li>
+                    <li><Link to = "/Hobby">Hobbies</Link></li>
                 </ul>
             </nav>
 
