@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink, Link } from "react-router-dom";
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import car from '../assets/Logo.png';
 
 const Navbar = () => {
   return (
@@ -9,17 +10,17 @@ const Navbar = () => {
 
     <nav className="navbar navbar-expand-lg bg-light">
       <div className="container">
-        <Link className="navbar-brand" href="#">
-          <img src="#" alt="logo" width="80" />
+        <Link className="navbar-brand" href="#" to="/">
+          <img src={car} alt="logo" width="80" />
         </Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <NavLink end className="nav-link" aria-current="page" to="/">Home</NavLink>
-            </li>
+            </li> */}
             <li className="nav-item dropdown">
               <span className="nav-link dropdown-toggle" data-bs-toggle="dropdown">JSONPlaceholder</span>
               <ul className="dropdown-menu">
