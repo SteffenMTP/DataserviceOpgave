@@ -8,16 +8,20 @@ import './App.scss';
 import 'bootstrap/dist/css/bootstrap.css';
 
 import Home from './pages/Home';
-import Facts from './pages/Facts';
 import Users from './pages/jsonplaceholder/Users';
 import Species from './pages/SWAPI/Species';
 import Starships from './pages/SWAPI/Starships';
 import News from './pages/NewsAPI/News';
 import NoMatch from './pages/NoMatch';
+import Facts from './pages/RapidAPI/Facts';
 import Hobbies from './pages/RapidAPI/Hobbies';
+import Weather1 from './pages/OpenWeather/Weather1';
+import Weather2 from './pages/OpenWeather/Weather2';
+import Weather3 from './pages/OpenWeather/Weather3';
 
 import Navbar from './Layout/Navbar';
 import Header from './Layout/Header';
+import MinTest from './components/pagination/MinTest';
 
 function App() {
   return (
@@ -36,6 +40,10 @@ function App() {
           <Route path="/Starships" element={<Starships/>}/>
           <Route path="/News" element={<News/>}/>
           <Route path="/Hobby" element={<Hobbies/>}/>
+          <Route path="/Weather1" element={<Weather1/>}/>
+          <Route path="/Weather2" element={<Weather2/>}/>
+          <Route path="/Weather3" element={<Weather3/>}/>
+          <Route path="MinTest" element={<MinTest/>}/>
 
           <Route path="*" element={<NoMatch/>}/> 
 
