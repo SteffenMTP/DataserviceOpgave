@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink, Link } from "react-router-dom";
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
 import car from '../assets/Logo.png';
 
 const Navbar = () => {
@@ -53,6 +53,13 @@ const Navbar = () => {
                 <li><NavLink className="dropdown-item" to="/Weather1">Søg efter Postnummer</NavLink></li>
                 <li><NavLink className="dropdown-item" to="/Weather2">Søg efter Postnummer DAWA</NavLink></li>
                 <li><NavLink className="dropdown-item" to="/Weather3">Søg efter Postnummer DAWA m. kort</NavLink></li>
+              </ul>
+            </li>
+            <li className="nav-item dropdown">
+              <span className="nav-link dropdown-toggle" data-bs-toggle="dropdown">NASA</span>
+              <ul className="dropdown-menu">
+                <li><NavLink className="dropdown-item" to="/Rover">Mars Rover Data</NavLink></li>
+                <li><NavLink className="dropdown-item" to="/MarsWeather">Mars Weather Data</NavLink></li>
               </ul>
             </li>
             <li className="nav-item">

@@ -18,10 +18,12 @@ import Hobbies from './pages/RapidAPI/Hobbies';
 import Weather1 from './pages/OpenWeather/Weather1';
 import Weather2 from './pages/OpenWeather/Weather2';
 import Weather3 from './pages/OpenWeather/Weather3';
+import Rover from './pages/NASA/Rover';
+import MarsWeather from './pages/NASA/MarsWeather';
 
 import Navbar from './Layout/Navbar';
 import Header from './Layout/Header';
-import MinTest from './components/pagination/MinTest';
+
 
 function App() {
   return (
@@ -43,7 +45,8 @@ function App() {
           <Route path="/Weather1" element={<Weather1/>}/>
           <Route path="/Weather2" element={<Weather2/>}/>
           <Route path="/Weather3" element={<Weather3/>}/>
-          <Route path="MinTest" element={<MinTest/>}/>
+          <Route path="/Rover" element={<Rover/>}/>
+          <Route path="/MarsWeather" element={<MarsWeather/>}/>
 
           <Route path="*" element={<NoMatch/>}/> 
 

@@ -1,10 +1,18 @@
+import Title from "../components/Title";
+
+
 const Home = ()=>{
 
     return(
         <>
         
         <section className="container">
-            <h1 className="">Home</h1>
+            <Title headline="Home" />
+
+            <p className="mx-auto">
+                Velkommen til dette projekt
+            </p>
+
         </section>
         
         </>
