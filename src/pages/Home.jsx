@@ -1,20 +1,27 @@
 import Title from "../components/Title";
 
 
-const Home = ()=>{
+const Home = () => {
 
-    return(
+    return (
         <>
-        
-        <section className="container">
-            <Title headline="Home" />
 
-            <p className="mx-auto">
-                Velkommen til dette projekt
-            </p>
+            <section className="container">
+                <Title headline="Home" />
 
-        </section>
-        
+                <div className="row">
+                    <div className="col">
+                        <p className="">
+                            Velkommen til dette projekt
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
         </>
     )
 

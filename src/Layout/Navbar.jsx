@@ -21,12 +21,16 @@ const Navbar = () => {
             {/* <li className="nav-item">
               <NavLink end className="nav-link" aria-current="page" to="/">Home</NavLink>
             </li> */}
+            
+            {/* JSON PLACEHOLDER */}
             <li className="nav-item dropdown">
               <span className="nav-link dropdown-toggle" data-bs-toggle="dropdown">JSONPlaceholder</span>
               <ul className="dropdown-menu">
                 <li><NavLink className="dropdown-item" to="/Users">Find en user</NavLink></li>
               </ul>
             </li>
+
+            {/* SWAPI */}
             <li className="nav-item dropdown">
               <span className="nav-link dropdown-toggle" data-bs-toggle="dropdown">SWAPI</span>
               <ul className="dropdown-menu">
@@ -34,12 +38,16 @@ const Navbar = () => {
                 <li><NavLink className="dropdown-item" to="/Starships">Starships</NavLink></li>
               </ul>
             </li>
+
+            {/* NEWSAPI */}
             <li className="nav-item dropdown">
               <span className="nav-link dropdown-toggle" data-bs-toggle="dropdown">NEWSAPI</span>
               <ul className="dropdown-menu">
                 <li><NavLink className="dropdown-item" to="/News">News</NavLink></li>
               </ul>
             </li>
+
+            {/* RAPIDAPI */}
             <li className="nav-item dropdown">
               <span className="nav-link dropdown-toggle" data-bs-toggle="dropdown">RapidAPI</span>
               <ul className="dropdown-menu">
@@ -47,14 +55,18 @@ const Navbar = () => {
                 <li><NavLink className="dropdown-item" to="/Hobby">Søg en random hobby</NavLink></li>
               </ul>
             </li>
+
+            {/* WEATHERAPI */}
             <li className="nav-item dropdown">
               <span className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Weather</span>
               <ul className="dropdown-menu">
                 <li><NavLink className="dropdown-item" to="/Weather1">Søg efter Postnummer</NavLink></li>
-                <li><NavLink className="dropdown-item" to="/Weather2">Søg efter Postnummer DAWA</NavLink></li>
-                <li><NavLink className="dropdown-item" to="/Weather3">Søg efter Postnummer DAWA m. kort</NavLink></li>
+                <li><NavLink className="dropdown-item" to="/Weather2">Vejret - med adresseopslag hos DAWA</NavLink></li>
+                <li><NavLink className="dropdown-item" to="/Weather3">Vejret - med adresseopslag hos DAWA m. kort</NavLink></li>
               </ul>
             </li>
+
+            {/* NASAAPI */}
             <li className="nav-item dropdown">
               <span className="nav-link dropdown-toggle" data-bs-toggle="dropdown">NASA</span>
               <ul className="dropdown-menu">
@@ -62,6 +74,28 @@ const Navbar = () => {
                 <li><NavLink className="dropdown-item" to="/MarsWeather">Mars Weather Data</NavLink></li>
               </ul>
             </li>
+
+            {/* AIRTABLE TODOS */}
+            <li className="nav-item dropdown">
+              <span className="nav-link dropdown-toggle" data-bs-toggle="dropdown">AirTable</span>
+              <ul className="dropdown-menu">
+                <li><NavLink className="dropdown-item" to="/ToDos">ToDos</NavLink></li>
+                <li><NavLink className="dropdown-item" to="/ToDoCreate">Opret Todos</NavLink></li>
+                <li><NavLink className="dropdown-item" to="/ToDosAdmin">Admin ToDos</NavLink></li>
+              </ul>
+            </li>
+
+            {/* AIRTABLE BILER */}
+            <li className="nav-item dropdown">
+              <span className="nav-link dropdown-toggle" data-bs-toggle="dropdown">AirTable - Biler</span>
+              <ul className="dropdown-menu">
+                <li><NavLink className="dropdown-item" to="/CarsList">Car List</NavLink></li>
+                <li><NavLink className="dropdown-item" to="/CarsCreate">Create Car Item</NavLink></li>
+                <li><NavLink className="dropdown-item" to="/ToDosAdmin">Admin ToDos</NavLink></li>
+              </ul>
+            </li>
+
+            {/* ANDET */}
             <li className="nav-item">
               <NavLink className="nav-link" aria-current="page" to="/noget">Noget</NavLink>
             </li>

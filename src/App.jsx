@@ -23,6 +23,12 @@ import MarsWeather from './pages/NASA/MarsWeather';
 
 import Navbar from './Layout/Navbar';
 import Header from './Layout/Header';
+import ToDos from './pages/AirTable/ToDos';
+import ToDoCreate from './pages/AirTable/ToDoCreate';
+import ToDosAdmin from './pages/AirTable/ToDosAdmin';
+import ToDoEdit from './pages/AirTable/ToDoEdit';
+import CarsList from './pages/AirTableCars/CarsList';
+import CarsCreate from './pages/AirTableCars/CarsCreate';
 
 
 function App() {
@@ -47,6 +53,13 @@ function App() {
           <Route path="/Weather3" element={<Weather3/>}/>
           <Route path="/Rover" element={<Rover/>}/>
           <Route path="/MarsWeather" element={<MarsWeather/>}/>
+          <Route path="/ToDos" element={<ToDos/>}/>
+          <Route path="/ToDoCreate" element={<ToDoCreate/>}/>
+          <Route path="/ToDoEdit/:id" element={<ToDoEdit/>}/>
+          <Route path="/ToDosAdmin" element={<ToDosAdmin/>}/>
+          <Route path="/CarsList" element={<CarsList/>}/>
+          <Route path="/CarsCreate" element={<CarsCreate/>}/>
+
 
           <Route path="*" element={<NoMatch/>}/> 
 
