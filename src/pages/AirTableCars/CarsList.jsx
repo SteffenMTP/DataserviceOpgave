@@ -15,7 +15,7 @@ const CarsList = () => {
 
     useEffect(() => {
 
-        getData("https://api.airtable.com/v0/app0Fd92p2heZj7j5/Table%201?/",
+        getData("https://api.airtable.com/v0/app0Fd92p2heZj7j5/Cars/",
             { "Authorization": "Bearer " + process.env.REACT_APP_AIRTABLEAPIKEY }
         )
 
@@ -46,6 +46,7 @@ const CarsList = () => {
                             <div className="card h-100">
                                 <div className="card-body">
                                     <h4>{c.fields.Name}</h4>
+                                    <img src={c.fields.UdbyderURL} alt="Cars"/>
                                     <p>Kategori: {c.fields.CategoryName}</p>
                                 </div>
                             </div>

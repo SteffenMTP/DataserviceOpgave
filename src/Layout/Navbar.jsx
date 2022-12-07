@@ -91,7 +91,7 @@ const Navbar = () => {
               <ul className="dropdown-menu">
                 <li><NavLink className="dropdown-item" to="/CarsList">Car List</NavLink></li>
                 <li><NavLink className="dropdown-item" to="/CarsCreate">Create Car Item</NavLink></li>
-                <li><NavLink className="dropdown-item" to="/ToDosAdmin">Admin ToDos</NavLink></li>
+                <li><NavLink className="dropdown-item" to="/CarsAdmin">Admin Car</NavLink></li>
               </ul>
             </li>
 

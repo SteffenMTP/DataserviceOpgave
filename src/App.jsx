@@ -29,6 +29,8 @@ import ToDosAdmin from './pages/AirTable/ToDosAdmin';
 import ToDoEdit from './pages/AirTable/ToDoEdit';
 import CarsList from './pages/AirTableCars/CarsList';
 import CarsCreate from './pages/AirTableCars/CarsCreate';
+import CarsAdmin from './pages/AirTableCars/CarsAdmin';
+import CarsEdit from './pages/AirTableCars/CarsEdit';
 
 
 function App() {
@@ -59,6 +61,8 @@ function App() {
           <Route path="/ToDosAdmin" element={<ToDosAdmin/>}/>
           <Route path="/CarsList" element={<CarsList/>}/>
           <Route path="/CarsCreate" element={<CarsCreate/>}/>
+          <Route path="/CarsEdit/:id" element={<CarsEdit/>}/>
+          <Route path="/CarsAdmin" element={<CarsAdmin/>}/>
 
 
           <Route path="*" element={<NoMatch/>}/> 
