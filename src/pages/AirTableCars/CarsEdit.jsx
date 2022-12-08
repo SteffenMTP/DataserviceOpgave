@@ -26,6 +26,7 @@ const CarsEdit = () => {
 
     //state til at rumme den rettede todo
     const [updatedCar, setUpdatedCar] = useState()
+    
     //state til at rumme den evt. rettede kategori
     const [updatedCategory, setUpdatedCategory] = useState()
 
@@ -60,11 +61,15 @@ const CarsEdit = () => {
     const handleSubmit = (e) => {
         e.preventDefault()              //VIGTIG ved submit af form, da den forhindrer siden i at reloade siden
 
+        //Hvis der er rettet så tag det rettede fra state - hvis der IKKE er rettet så hent det fra de data vi modtog med GET-metoden
+        let car = updatedCar ? updatedCar : data.fields.Name
+        let cate = updatedCategory ? updatedCategory : data.fields.Category[0]
+
         let cd = {
             "fields": {
-                "Name": updatedCar,
+                "Name": car,
                 "UdbyderURL": "https://www.bilbasen.dk/", 
-                "Category": [updatedCategory]
+                "Category": [cate]
             }
         }
 

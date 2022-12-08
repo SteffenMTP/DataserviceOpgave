@@ -64,7 +64,7 @@ const CarsAdmin = () => {
                                 <div className="card-body">
                                     <h4>{c.fields.Name}</h4>
                                     <p>Kategori: {c.fields.CategoryName}</p>
-                                    <img src={c.fields.UdbyderURL} alt="Cars"/>
+                                    <img src={c.fields.UdbyderURL} alt="Cars" className="Adminphoto"/>
                                 </div>
                                 <div className="card-footer">
                                     {/* <button className="btn btn-warning me-2">RET</button> */}

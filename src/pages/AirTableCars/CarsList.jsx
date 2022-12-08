@@ -46,7 +46,7 @@ const CarsList = () => {
                             <div className="card h-100">
                                 <div className="card-body">
                                     <h4>{c.fields.Name}</h4>
-                                    <img src={c.fields.UdbyderURL} alt="Cars"/>
+                                    <img src={c.fields.UdbyderURL} alt="Cars" className="Adminphoto"/>
                                     <p>Kategori: {c.fields.CategoryName}</p>
                                 </div>
                             </div>
