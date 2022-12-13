@@ -100,8 +100,8 @@ const Navbar = () => {
               <span className="nav-link dropdown-toggle" data-bs-toggle="dropdown">EgetAPI</span>
               <ul className="dropdown-menu">
                 <li><NavLink className="dropdown-item" to="/Haveservice">Haveservice</NavLink></li>
-                <li><NavLink className="dropdown-item" to="/HaveserviceAdmin">Haveservice Admin</NavLink></li>
                 <li><NavLink className="dropdown-item" to="/HaveserviceAdminCreate">Service Create</NavLink></li>
+                <li><NavLink className="dropdown-item" to="/HaveserviceAdmin">Haveservice Admin</NavLink></li>
               </ul>
             </li>
 
@@ -110,8 +110,8 @@ const Navbar = () => {
               <span className="nav-link dropdown-toggle" data-bs-toggle="dropdown">BackendAPI</span>
               <ul className="dropdown-menu">
                 <li><NavLink className="dropdown-item" to="/Products">Products</NavLink></li>
-                <li><NavLink className="dropdown-item" to="/ProductsAdmin">Products Admin</NavLink></li>
                 <li><NavLink className="dropdown-item" to="/ProductsAdminCreate">Products Create</NavLink></li>
+                <li><NavLink className="dropdown-item" to="/ProductsAdmin">Products Admin</NavLink></li>
               </ul>
             </li>
 

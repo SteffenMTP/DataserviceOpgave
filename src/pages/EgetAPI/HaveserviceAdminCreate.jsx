@@ -78,7 +78,7 @@ const HaveserviceAdminCreate = () => {
               </label>
             </div>
 
-            <button type="submit" className='btn btn-primary'>Opret nyt produkt</button>
+            <button type="submit" className='btn btn-primary'>Opret ny service</button>
           </form>
 
         </div>

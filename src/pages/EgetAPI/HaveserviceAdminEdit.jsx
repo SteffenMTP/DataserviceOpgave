@@ -34,7 +34,7 @@ const HaveserviceAdminEdit = () => {
 
     //hvis der er data fra put-requestet = færdig med at rette
     if (dataPut) {
-      navigate('/ProductsAdmin')
+      navigate('/HaveServiceAdmin')
     }
 
   }, [dataPut])
@@ -71,7 +71,7 @@ const HaveserviceAdminEdit = () => {
               {/* Name */}
               <div className='mb-3 mt-3'>
                 <label className='form-label me-3'> Produktets navn:
-                  <input defaultValue={data.title} type="text" name='name' required className='form-control' />
+                  <input defaultValue={data.title} type="text" name='title' required className='form-control' />
                 </label>
               </div>
 
@@ -93,7 +93,7 @@ const HaveserviceAdminEdit = () => {
                 </label>
               </div>
 
-              <button type="submit" className='btn btn-primary'>Ret produkt</button>
+              <button type="submit" className='btn btn-primary'>Ret service</button>
             </form>
 
           </div>

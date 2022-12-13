@@ -60,7 +60,7 @@ const HaveserviceAdmin = () => {
                 
                 <h4>{s.title}</h4>
                 <p>{s.description} ...</p>
-                <img src={s.image} alt="Showcasing product"/>
+                <img src={"http://localhost:5005/images/" + s.image} alt="Showcasing product" className="CurrentPic"/>
               
               </div>
 
