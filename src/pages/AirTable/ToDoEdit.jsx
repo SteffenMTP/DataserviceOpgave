@@ -3,11 +3,11 @@ import Title from '../../components/Title';
 import { useParams, useNavigate } from 'react-router-dom';
 import Error from "../../components/Error";
 import Loader from "../../components/Loader"
-import usePatchData from '../../hooks/usePatchData'
 
 //Kald til API
 import useGetData from '../../hooks/useGetData';
-
+// Ret data
+import usePatchData from '../../hooks/usePatchData'
 
 //HVILKEN ID???? skal rette = indlæses i formular
 

@@ -44,7 +44,7 @@ const CarsCreate = () => {
                 "Name": newcar,
                 // "UdbyderURL":
                 //     [{
-                //         "url": img //SOMETHIN LIKE DIS     Go to imgbb maybe and send a url then get that
+                        "UdbyderURL": img, //SOMETHIN LIKE DIS     Go to imgbb maybe and send a url then get that
                 //     }],
                 "Category": [category]
             }
@@ -105,12 +105,10 @@ const CarsCreate = () => {
                                 </select>
                             </label>
 
-
-
                         </div>
 
                         <div className='mb-3 mt-3'>
-                            <label className='form-label me-3'> Indsæt billede:
+                            <label className='form-label me-3'> Indsæt billede URL:
                                 <input type="text" onInput={e => setImg(e.target.value)} className='form-control' />
                             </label>
                         </div>

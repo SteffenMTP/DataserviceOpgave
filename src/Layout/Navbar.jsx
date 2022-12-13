@@ -71,7 +71,7 @@ const Navbar = () => {
               <span className="nav-link dropdown-toggle" data-bs-toggle="dropdown">NASA</span>
               <ul className="dropdown-menu">
                 <li><NavLink className="dropdown-item" to="/Rover">Mars Rover Data</NavLink></li>
-                <li><NavLink className="dropdown-item" to="/MarsWeather">Mars Weather Data</NavLink></li>
+                {/* <li><NavLink className="dropdown-item" to="/MarsWeather">Mars Weather Data</NavLink></li> */}
               </ul>
             </li>
 
@@ -95,10 +95,30 @@ const Navbar = () => {
               </ul>
             </li>
 
-            {/* ANDET */}
+            {/* Haveservice fra EGEN SERVER */}
+            <li className="nav-item dropdown">
+              <span className="nav-link dropdown-toggle" data-bs-toggle="dropdown">EgetAPI</span>
+              <ul className="dropdown-menu">
+                <li><NavLink className="dropdown-item" to="/Haveservice">Haveservice</NavLink></li>
+                <li><NavLink className="dropdown-item" to="/HaveserviceAdmin">Haveservice Admin</NavLink></li>
+                <li><NavLink className="dropdown-item" to="/HaveserviceAdminCreate">Service Create</NavLink></li>
+              </ul>
+            </li>
+
+            {/* Products fra BACKENDAPI */}
+            <li className="nav-item dropdown">
+              <span className="nav-link dropdown-toggle" data-bs-toggle="dropdown">BackendAPI</span>
+              <ul className="dropdown-menu">
+                <li><NavLink className="dropdown-item" to="/Products">Products</NavLink></li>
+                <li><NavLink className="dropdown-item" to="/ProductsAdmin">Products Admin</NavLink></li>
+                <li><NavLink className="dropdown-item" to="/ProductsAdminCreate">Products Create</NavLink></li>
+              </ul>
+            </li>
+
+            {/* ANDET
             <li className="nav-item">
               <NavLink className="nav-link" aria-current="page" to="/noget">Noget</NavLink>
-            </li>
+            </li> */}
 
           </ul>
         </div>
